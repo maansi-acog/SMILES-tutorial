@@ -1,1 +1,5 @@
-
+%%capture
+import sys
+IN_COLAB = 'google.colab' in sys.modules
+if IN_COLAB:
+    !pip install useful_rdkit_utils pandas scikit-learn tqdm numpy seaborn mols2grid matplotlib
